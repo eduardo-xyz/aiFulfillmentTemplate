@@ -1,0 +1,27 @@
+{
+  "name": "ai-fulfillment-template",
+  "version": "1.0.0",
+  "description": "GDG Pura Vida, ai template demo",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "start": "functions deploy aiFulfillmentTemplate --trigger-http",
+    "deploy": "gcloud beta functions deploy aiFulfillmentTemplate --trigger-http --stage-bucket <storage_bucket_name>"
+  },
+  "keywords": [
+    "GDG",
+    "Pura Vida",
+    "ai",
+    "google",
+    "assistant"
+  ],
+  "author": "Eduardo Oviedo Blanco",
+  "license": "Apache Version 2.0",
+  "dependencies": {
+    "actions-on-google": "^1.1.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {}
+}
